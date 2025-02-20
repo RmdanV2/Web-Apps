@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Deposit - A & R STORE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Notifikasi login -->
+    <div id="login-notification" class="login-notification" style="display: none;">
+        Harap login terlebih dahulu!
+    </div>
+
+    <div class="deposit-container">
+        <h1>Halaman Deposit</h1>
+        
+        <form id="deposit-form" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="deposit-amount">Jumlah Deposit (Min 5.000):</label>
+                <input type="number" id="deposit-amount" name="deposit-amount" min="5000" required>
+            </div>
+
+            <div class="form-group">
+                <label for="total-amount">Total:</label>
+                <input type="text" id="total-amount" name="total-amount" readonly>
+            </div>
+
+            <div class="payment-details">
+                <p><strong>Pembayaran:</strong></p>
+                <p>GOPAY: 0895422604961</p>
+                <p>A/N: S***R***H / Ramdan</p>
+            </div>
+
+            <div class="form-group">
+                <label for="payment-proof">Upload Bukti Pembayaran (JPG/PNG):</label>
+                <input type="file" id="payment-proof" name="payment-proof" accept=".jpg,.png" required>
+            </div>
+
+            <button type="submit" class="submit-btn">Kirim Pembayaran</button>
+        </form>
+
+        <div id="notification" class="notification" style="display: none;">
+            <p>Pembayaran telah dikirim. Tunggu konfirmasi.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

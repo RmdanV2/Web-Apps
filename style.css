@@ -1,0 +1,279 @@
+/* Reset dan pengaturan dasar */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 1rem;
+}
+
+/* Styling untuk store-container */
+.store-container {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.store-container h1 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.store-container h2 {
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+.product {
+    margin-bottom: 1.5rem;
+}
+
+#app-selection {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+.price {
+    margin-bottom: 2rem;
+}
+
+.buy-btn {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    background: #6e8efb;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.buy-btn:hover {
+    background: #5a7de1;
+}
+
+/* Styling untuk login-container */
+.login-container {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 0.75rem 2.5rem 0.75rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.input-group .fa {
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    color: #aaa;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    background: #6e8efb;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.login-btn:hover {
+    background: #5a7de1;
+}
+
+.register-link, .login-link {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.register-link a, .login-link a {
+    color: #6e8efb;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register-link a:hover, .login-link a:hover {
+    text-decoration: underline;
+}
+
+/* Styling untuk deposit-container */
+.deposit-container {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Heading untuk halaman deposit */
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Styling untuk form input */
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+input[type="number"],
+input[type="text"],
+input[type="file"] {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Styling untuk tombol kirim pembayaran */
+button.submit-btn {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    background: #6e8efb;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button.submit-btn:hover {
+    background: #5a7de1;
+}
+
+/* Styling untuk notifikasi setelah kirim pembayaran */
+.notification {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 1rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Styling untuk detail pembayaran */
+.payment-details p {
+    margin: 0.5rem 0;
+}
+
+/* Styling untuk link kembali ke halaman utama */
+.back-link {
+    display: block;
+    text-align: center;
+    font-size: 1rem;
+    color: #6e8efb;
+    margin-top: 1.5rem;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries */
+@media (max-width: 480px) {
+    .store-container, .login-container, .deposit-container {
+        padding: 1.5rem;
+        border-radius: 5px;
+    }
+
+    .buy-btn, .login-btn, button.submit-btn {
+        padding: 0.5rem;
+    }
+
+    .input-group input {
+        padding: 0.5rem 2rem 0.5rem 0.75rem;
+    }
+}
+/* Notifikasi Login */
+.login-notification {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    border: 2px solid red;
+    color: red;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: none;
+    opacity: 0;
+}
+
+/* Animasi Fade In */
+.fade-in {
+    animation: fadeInOut 3s ease-in-out;
+}
+
+/* Keyframes Animasi */
+@keyframes fadeInOut {
+    0%, 100% {
+        opacity: 0;
+    }
+    10%, 90% {
+        opacity: 1;
+    }
+}
+
+/* Notifikasi Pembayaran */
+.notification {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 1rem;
+    text-align: center;
+    font-weight: bold;
+    display: none;
+}

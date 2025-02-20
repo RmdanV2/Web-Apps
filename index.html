@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A & R STORE - Pembelian</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Notifikasi login -->
+    <div id="login-notification" class="login-notification">
+        Harap login terlebih dahulu!
+    </div>
+
+    <div class="store-container">
+        <h1>A & R STORE</h1>
+        <h2>Pilih Aplikasi Premium</h2>
+
+        <form id="purchase-form">
+            <div class="product">
+                <label for="app-selection">Pilih Aplikasi:</label>
+                <select id="app-selection" name="app-selection">
+                    <option value="icloud50gb" data-price="30000">ICLOUD 50 GB (4 Bulan)</option>
+                    <option value="am1m" data-price="30000">APPLE MUSIC (1 Bulan)</option>
+                    <option value="zoom1m" data-price="40000">ZOOM MEETING PRO (1 Bulan)</option>
+                    <option value="nf1p1u" data-price="34000">NETFLIX PREMIUM SHARING 1P1U (1 Bulan)</option>
+                    <option value="nf2p1u" data-price="50000">NETFLIX PREMIUM SHARING 1P1U (2 Bulan)</option>
+                    <option value="nf3p1u" data-price="60000">NETFLIX PREMIUM SHARING 1P1U (3 Bulan)</option>
+                    <option value="nf6p1u" data-price="125000">NETFLIX PREMIUM SHARING 1P1U (6 Bulan)</option>
+                    <option value="nf1p2u" data-price="30000">NETFLIX PREMIUM SHARING 1P2U (1 Bulan)</option>
+                    <option value="nfpriv1m" data-price="125000">NETFLIX PREMIUM PRIVATE (1 Bulan)</option>
+                    <option value="spo1b" data-price="22000">SPOTIFY PREMIUM INDIVIDUAL 1 BULAN (No Garansi)</option>
+                    <option value="spo1bg" data-price="25000">SPOTIFY PREMIUM INDIVIDUAL 1 BULAN (Garansi 1x)</option>
+                    <option value="spo3b" data-price="30000">SPOTIFY PREMIUM INDIVIDUAL 3 BULAN (No Garansi)</option>
+                    <option value="spo3bg" data-price="35000">SPOTIFY PREMIUM INDIVIDUAL 3 BULAN (Garansi 1x)</option>
+                    <option value="yt1b" data-price="20000">YOUTUBE PREMIUM INDIVIDUAL 1 BULAN (No Garansi)</option>
+                    <option value="yt1bg" data-price="25000">YOUTUBE PREMIUM INDIVIDUAL 1 BULAN (Garansi 1x)</option>
+                    <option value="yt3b" data-price="30000">YOUTUBE PREMIUM INDIVIDUAL 3 BULAN (No Garansi)</option>
+                    <option value="yt3bg" data-price="43000">YOUTUBE PREMIUM INDIVIDUAL 3 BULAN (Garansi 1x)</option>
+                    <option value="canvam1" data-price="20000">CANVA PRO MEMBER (1 Bulan)</option>
+                    <option value="canvam1y" data-price="25000">CANVA PRO MEMBER (1 Tahun)</option>
+                    <option value="canval" data-price="40000">CANVA PRO MEMBER (Lifetime)</option>
+                    <option value="canvao" data-price="30000">CANVA PRO OWNER (30 Hari)</option>
+                    <option value="vdas1m" data-price="33000">VIDIO PLATINUM SHARING ALLDEV (1 Bulan)</option>
+                    <option value="vdas2m" data-price="45000">VIDIO PLATINUM SHARING ALLDEV (2 Bulan)</option>
+                    <option value="vdas3m" data-price="55000">VIDIO PLATINUM SHARING ALLDEV (3 Bulan)</option>
+                    <option value="vdap1m" data-price="40000">VIDIO PLATINUM PRIVATE ALLDEV (1 Bulan)</option>
+                    <option value="vdap2m" data-price="60000">VIDIO PLATINUM PRIVATE ALLDEV (2 Bulan)</option>
+                    <option value="vdap3m" data-price="75000">VIDIO PLATINUM PRIVATE ALLDEV (3 Bulan)</option>
+                    <option value="vdap1y" data-price="93000">VIDIO PLATINUM PRIVATE ALLDEV (1 Tahun)</option>
+                    <option value="vdmd1m" data-price="65000">VIDIO PLATINUM DIAMOND MOBILE (1 Bulan)</option>
+                    <option value="vdmd2m" data-price="95000">VIDIO PLATINUM DIAMOND MOBILE (2 Bulan)</option>
+                    <option value="vdmd3m" data-price="135000">VIDIO PLATINUM DIAMOND MOBILE (3 Bulan)</option>
+                    <option value="vdpp45d" data-price="70000">VIDIO PLATINUM PLATINUM + PILDUN (45 Hari)</option>
+                    <option value="ccp1y" data-price="25000">CAPCUT PRO (1 Tahun)</option>
+                    <option value="apv1s" data-price="21000">AMAZON PRIME VIDEO SHARING 1 Bulan</option>
+                    <option value="apv1p" data-price="29000">AMAZON PRIME VIDEO PRIVATE 1 Bulan</option>
+                </select>
+            </div>
+
+            <div class="price">
+                <p><strong>Harga: <span id="price">Rp 30.000</span></strong></p>
+            </div>
+
+            <button type="submit" class="buy-btn">Beli Sekarang</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
